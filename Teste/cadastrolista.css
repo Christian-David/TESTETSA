@@ -1,0 +1,486 @@
+body{
+    font-family: arial,georgia,times, serif;
+    color: white;
+    margin: 0;
+  }
+  header{
+    background: #17222D;
+    width: 100%;
+    overflow: hidden;
+   }
+   header a{
+     color: white;  
+      text-decoration: none;
+  
+   }
+   .wrapper{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding-right: 0;
+    overflow: hidden;
+       }
+         header .logo{
+         color: white;
+         line-height: 41px;
+         float: left;
+         margin-left: 861px;
+         margin-right: 0;
+     }
+  
+     header nav{
+      color: white;
+      float: left;
+      line-height: 11px;
+      
+  }
+  
+  
+   .divcadastro{
+    background: #EFF4F9;
+    padding: 0.7rem 0;
+    margin: 0;
+    width: 100%;
+   }
+   .cadastro{
+    color: #17222D;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  
+  }
+  .formboa{
+    margin: 0 auto;
+    width: 500px;
+    height: 830px;
+    padding-top: 30px;
+
+  }
+  
+  p{
+    color: #445566;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2px;
+
+  }
+  
+  .input{
+    color: black;
+    border: 0;
+    background: #EFF4F9;
+    box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+    outline: none;
+
+  }
+  .inputs{
+    /* border: solid 1px #ccc; */
+    padding: 10px;
+    width: 450px;
+    margin-bottom: 0px;
+    
+
+  }
+  .ladonodereita{
+    float: left;
+    padding: 0px;
+    width: 200;
+    margin-right:30px;
+  }
+
+  .inputslado{
+    /* border: solid 1px #ccc; */
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 0px;
+
+
+  }
+  .ladodereita{
+    float: left;
+    padding: 0px ;
+    padding-bottom: 30px;
+    width: 200;
+    margin-right: 30px;
+  }
+
+  label{
+    color: #0a0a0a;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .pagar{
+    margin-top: 180px;
+    padding-bottom: 5px;
+  }
+
+  .titulo{
+    font-size: 16px;
+    color: #1188EE;
+    margin-bottom: 20px;
+  }
+
+  .linea{
+    background-color:  rgba(187, 204, 221, 0.4);
+    color:rgba(187, 204, 221, 0.4);
+    size: 2;
+    height: 5px;
+    border: 0;
+    margin-right: 30px;
+  }
+
+  .movlabel{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 15px;
+    user-select: none;
+    padding: 20px;
+    padding-left: 30px;
+
+  }
+
+  .movlabel + .movlabel {
+    margin-left: 5px;
+  }
+
+  .movlabel input{
+    display: none;
+  }
+
+  .movlabel .circle{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    left: 10px;
+    top: 10;
+    border-radius: 50%;
+    border: 1px solid #1188EE;
+    /* margin-left: 15; */
+    
+  }
+
+  .movlabel:hover .circle{
+    background-color: #eee;
+  }
+  .movlabel input:checked + .circle{
+    background-color: #2196fc;
+  }
+  .movlabel input:checked + .circle::after{
+    content: "";
+    height: 5px;
+    width: 5px;
+    background-color: #eee;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .nomecartao{
+margin: 0;
+  }
+  .selectmes{
+    padding: 10px;
+    width: 70px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    color: #445566;
+    border: 0;
+    background: #EFF4F9;
+    box-shadow: 0px 2px 2px rgba(187, 204, 221, 0.4);
+    outline: none;
+    
+  }
+  
+/* selest Estado */
+.ladonodereitaestado{
+  float: left;
+  height: 40px;
+  position: relative;
+  display: flex;
+  width: 220px;
+  overflow: hidden;
+  color: #445566;
+
+}
+.ladonodereitaestado::after{
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right:10px;
+  padding-top: 10px ;
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+
+}
+.slectestado{
+  height: 40px;
+-webkit-appearance:none;
+ -moz-appearance:none;
+ -ms-appearance:none;
+ appearance:none;
+ outline:0;
+ box-shadow:none;
+ border:0!important;
+ background: rgba(187, 204, 221, 0.4);
+ background-image: none;
+ flex: 1;
+ padding: 0 .5em;
+ color:#445566;
+ cursor:pointer;
+ font-size: 1em;
+ font-family: 'Open Sans', sans-serif;
+
+}
+.slectestado::-ms-expand{
+    display: none;
+}
+
+/* selest Cidade */
+.ladonodereitacidade{
+  float: left;
+  height: 40px;
+  position: relative;
+  display: flex;
+  width: 220px;
+  overflow: hidden;
+  color: #445566;
+  /* margin-right: 25px; */
+
+}
+.ladonodereitacidade::after{
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right:10px;
+  padding-top: 10px ;
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+
+}
+.slectcidade{
+  height: 40px;
+-webkit-appearance:none;
+ -moz-appearance:none;
+ -ms-appearance:none;
+ appearance:none;
+ outline:0;
+ box-shadow:none;
+ border:0!important;
+ background: rgba(187, 204, 221, 0.4);
+ background-image: none;
+ flex: 1;
+ padding: 0 .5em;
+ color:#445566;
+ cursor:pointer;
+ font-size: 1em;
+ font-family: 'Open Sans', sans-serif;
+
+}
+.slectcidade::-ms-expand{
+    display: none;
+}
+
+/* selest month */
+.ladonodereitames{
+  float: left;
+  height: 50px;
+  position: relative;
+  display: flex;
+  width: 100px;
+  overflow: hidden;
+  color: #445566;
+  margin-right: 25px;
+
+}
+.ladonodereitames::after{
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right:10px;
+  padding-top: 10px ;
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+
+}
+.slectmes{
+  height: 40px;
+  /* margin-bottom: 30px; */
+  -webkit-appearance:none;
+ -moz-appearance:none;
+ -ms-appearance:none;
+ appearance:none;
+ outline:0;
+ box-shadow:none;
+ border:0!important;
+ background: rgba(187, 204, 221, 0.4);
+ background-image: none;
+ flex: 1;
+ padding: 0 .5em;
+ color:#445566;
+ cursor:pointer;
+ font-size: 1em;
+ font-family: 'Open Sans', sans-serif;
+
+}
+.slectmes::-ms-expand{
+    display: none;
+}
+
+  /* Select year */
+  .ladonodereitaano{
+    float: left;
+    height: 50px;
+    position: relative;
+    display: flex;
+    width: 90px;
+    overflow: hidden;
+    color: #445566;
+  
+  }
+  .ladonodereitaano::after{
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right:10px;
+    padding-top: 10px ;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+
+  }
+  .slectano{
+    height: 40px;
+    /* margin-bottom: 30px; */
+    -webkit-appearance:none;
+   -moz-appearance:none;
+   -ms-appearance:none;
+   appearance:none;
+   outline:0;
+   box-shadow:none;
+   border:0!important;
+   background: rgba(187, 204, 221, 0.4);
+   background-image: none;
+   flex: 1;
+   padding: 0 .5em;
+   color:#445566;
+   cursor:pointer;
+   font-size: 1em;
+   font-family: 'Open Sans', sans-serif;
+ 
+  }
+  .slectano::-ms-expand{
+      display: none;
+  }
+
+
+
+
+  .ladodereita1{
+    float: left;
+    padding: 0px ;
+    padding-bottom: 0px;
+    width: 200;
+    margin-right: 30px;
+  }
+
+  .divtitulo2{
+    margin-top: 100px;
+    padding: 0px;
+  }
+
+  .titulo2{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .linea2{
+    background-color:  rgba(187, 204, 221, 0.4);
+    color:rgba(187, 204, 221, 0.4);
+    size: 2;
+    height: 5px;
+    border: 0;
+    margin-top: 0px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  .botons{
+    color: white;
+    background: white;
+    border: 0;
+    background-color: #1188EE;
+    padding: 10px;
+    width: 200px;
+    font-size: 15px;
+  }
+
+  .space{
+    padding-bottom: 10px;
+  }
+ /*  MODIFICACIONES DEL FORMULARIO DE LISTA */
+
+ .mensaje{
+    /* margin-top: 180px;
+    padding-bottom: 5px; */
+    margin: 0 auto;
+    width: 500px;
+    height: 830px;
+    padding-top: 30px;
+  }
+
+  .titulolista{
+    font-size: 16px;
+    color: #1188EE;
+    margin-bottom: 20px;
+  }
+
+  .linealista{
+    background-color:  rgba(187, 204, 221, 0.4);
+    color:rgba(187, 204, 221, 0.4);
+    size: 2;
+    height: 5px;
+    border: 0;
+    margin-right: 30px;
+  }
+  .tabla{
+      color: #0a0a0a;
+      margin-top: 50px;
+      width: 100%;
+  }
+
+  table,th,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+
+  th,td{
+      padding: 10px;
+  }
+  th{
+      text-align: left;
+  }
+
+   footer{
+     background-color: #1188EE;
+     padding: 3rem 0;
+     padding-left: 50px;
+     text-align: left;
+  
+   }
+  
+  
